@@ -1,0 +1,59 @@
+Print("Welcome to the Treasure Islandn\nYour Mission is finding the treasure!!")
+Game_is_on=True
+while True:
+    print("""
+                    ____...------------...____
+               _.-"` /o/__ ____ __ __  __ \o\_`"-._
+             .'     / /                    \ \     '.
+             |=====/o/======================\o\=====|
+             |____/_/________..____..________\_\____|
+             /   _/ \_     <_o#\__/#o_>     _/ \_   
+             \_________\####/_________/
+              |===\!/========================\!/===|
+              |   |=|          .---.         |=|   |
+              |===|o|=========/     \========|o|===|
+              |   | |         \() ()/        | |   |
+              |===|o|======{'-.) A (.-'}=====|o|===|
+              | __/ \__                    __/ \__ |
+              |==== .'.'^'.'.====|
+          jgs |  _\o/   __  {.' __  '.} _   _\o/  _|
+            
+              
+                """)
+    step1=input("You are in front of the Magical Time Door.\n If you want to step inside, type 'yes',else 'q'").lower()
+    if step1== 'yes':
+        pass
+    else:
+        break
+    step2=input("You have just arrive to two ways.\n"
+                " 'left' goes to a boat to reach the ısland,'right' goes to underground").lower()
+    if step2=='right':
+        print("Game is Over")
+        print("you die in the mounth of big anaconda")
+        break
+    elif step2=='left':
+        print("You have survived from trex that lives under the lake and reached the Treasure Island")
+        pass
+    else:
+        break
+    step3=input("You see two boxes.\n Left or Right?").lower()
+    if step3=="left":
+        print("Congratulations!!! You have the treasure but wait, I have a question!  ")
+        qua=input("Why dead men tells no tales")
+        if qua=='they are the tales':
+            print("Congratulations you have the treasure ")
+        else:
+            print("Game is over, you have cursed by the owner of box" )
+            pass
+    elif step3=='left':
+        print("Game is over")
+        prnt("You have chosen filled poisoneus gas box,you have turned into Zombi ")
+        pass
+    else:
+        break
+
+    Return=input("Do you want to play again")
+    if Return=='yes':
+       True
+    else:
+       break
