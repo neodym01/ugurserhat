@@ -1,0 +1,22 @@
+print("Welcome to the Love calculator") 
+game_is_on=True 
+while True: 
+  Name1=input("What is your name?\n:").lower() 
+  Name2=input("What is their name?\n:").lower() 
+  sample1=[] 
+  sample2=[] 
+  sample1.append(f"{Name1}".count("t")+f"{Name1}".count("r")+f"{Name1}".count("u")+f"{Name1}".count("e")) sample1.append(f"{Name1}".count("l")+f"{Name2}".count("o")+f"{Name1}".count("v")+f"{Name1}".count("e")) 
+  sample2.append(f"{Name2}".count("t") + f"{Name2}".count("r") + f"{Name2}".count("u") + f"{Name2}".count("e")) sample2.append(f"{Name2}".count("l") + f"{Name2}".count("o") + f"{Name2}".count("v") + f"{Name2}".count("e")) 
+  total = ((sample1[0]*10)+(sample1[1]))+((sample2[0]*10)+(sample2[1]))/2 
+  if total<10 or total>90: 
+    print(f"Your score is{total},You are like mentol coke") 
+  elif 55>total and 40<total: 
+    print(f"Your score is {total}, you are perfectly fit each other") 
+  else: print("Go around") 
+    pass 
+  ask=input("do you want to play again?").lower() 
+  if ask== "yes":
+    True 
+  else:
+    break 
+print("Game is Over")
