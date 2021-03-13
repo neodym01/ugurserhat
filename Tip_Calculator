@@ -1,0 +1,17 @@
+print("Welcome to the tip calculator")
+
+QUA1=float(input("What is the total amounth of bill? : "))
+QUA2=input("What is your tip percentage? 10,12,15 or custom ")
+QUA3=float(input("What is the number of person who will be devided the bill"))
+
+if QUA2 == '10' or QUA2== '12' or QUA2 == '15':
+    result=float((QUA1/100)*int(QUA2))
+    percapita=result/QUA3
+    print(f"Every person should pay\n :${percapita}")
+else:
+    cs=float(input("What percentage you want to pay? (must be more than 15)"))
+    result2=float((QUA1/100)*cs)
+    percapita2=result2/QUA3
+    print(f"The tip per customer is {percapita2}")
+print("Bon Appetite :)")
+© 2021 GitHub, Inc.
