@@ -1,0 +1,38 @@
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n") text = input("Type your message:\n").lower() shift = int(input("Type the shift number:\n")) def encrypt(plain_text, shift_amount):
+
+cipher_text = "" for letter in plain_text: position = alphabet.index(letter) new_position = position + shift_amount new_letter = alphabet[new_position] cipher_text += new_letter print(f"The encoded text is {cipher_text}")
+
+encrypt(plain_text=text, shift_amount=shift)
+
+def decrypt(encoded_text,shift_amount):
+
+decipher_text=""
+for a in encoded_text:
+    position = alphabet.index(a)
+    new_position=position- shift_amount
+    new_letter = alphabet[new_position]
+    decipher_text+= new_letter
+print(f"The decoded text is {decipher_text}")
+decrypt("mfqt",5)
+
+def caesar(g,h,j):
+
+for i in g:
+    position= alphabet.index(i)
+    new_position=position+h
+    new_letter=alphabet[new_position]
+    j+=new_letter
+print(f"{j}")
+decipher_text1=""
+for a in j:
+    position1 = alphabet.index(a)
+    new_position1=position1- h
+    new_letter1 = alphabet[new_position1]
+    decipher_text1+= new_letter1
+print(f"The decoded text is {decipher_text1}")
+caesar(kola,3,j)
+turkish_words = {"yol": "way","Zaman": "time"}
+
+print(turkish_words["yol"])
