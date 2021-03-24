@@ -1,0 +1,31 @@
+from turtle import Turtle,Screen
+
+import turtle as t
+
+import random
+
+tim = t.Turtle()
+
+t.colormode(255)
+
+def rndmclr():
+
+r=random.randrange(255)
+
+g=random.randrange(255)
+
+b=random.randrange(255)
+
+t.pencolor(r,g,b)     
+t.speed("fast")
+
+for i in range(60):
+
+t.circle(100)
+
+t.setheading(i*10)  ##You can set the degre by changing the number
+
+rndmclr()
+screen = Screen()
+
+screen.exitonclick()
