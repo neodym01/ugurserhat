@@ -1,0 +1,31 @@
+print("Stone Paper Scissors Game" )
+
+Rock=print(str(""" _______ ---' ) () () () ---.(_) """))
+
+Paper=print(str(""" _______ ---' ) ______) ____) ) ---.) """))
+
+Scissors=print(str(""" _______ ---' ) _) ______) () ---.() """)) while True:
+import random P1= int(input("Stone, Paper, Scissors ? stone 0,paper 1,scissors 2: ")) P2= random.randint(0,2)
+
+if   P1== 0 and P2 == 2:
+    print ( "you win!" + """
+_______
+---' ) () () () ---.(_) """)
+
+elif P1 == 0 and P2 == 1:
+    print ( "P2 Win!")
+    
+elif P1 == 1 and P2 == 0:
+    print ( "you Win!") 
+   
+elif P1 == 1 and P2 == 2:
+    print ( "P2 Win!")
+   
+elif P1 == 2 and P2 == 0:
+    print ( "P2 Win!")
+   
+elif P1 == 2 and P2 == 1:
+    print ( "you Win!")
+   
+else:
+    print("draw")
