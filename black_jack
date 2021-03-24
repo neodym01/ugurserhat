@@ -1,0 +1,29 @@
+print("HARLEM")
+
+cards=["A",2,3,4,5,6,7,8,9,10,10,10,10]
+
+def card_selection(Player,Computer): 
+    Player =[] 
+    Player+=random.choice(cards,2)   
+    if Player== "A": 
+    Player.pop("A")
+    Player.Append(11) 
+    Computer = [] 
+    Computer += random.choice(cards) 
+    if Computer == A: 
+      Computer.pop(A) 
+      Computer.append(11) 
+      print(f"Computer have {Computer} and ? . ")
+
+question=input("Would you want to add card? "Yes","No":)
+if question == "Yes":
+    Player+=random.choice(cards)
+    if Player== "A":
+        question2=input("What number is the A? 1 or 11")
+        if question2==1:
+            Player.pop("A")
+            Player.append(1)
+        else:
+            Player.append(11)
+Computer+=random.choice(cards)
+card_selection(Player,Computer)
